@@ -241,17 +241,42 @@ h1{
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
+h3{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: var(--txt-color);
+}
 .about-me{
   .holder{
-    background-color: var( --hover-col);
+    /* background-color: var( --hover-col); */
+    background-color: #F8F6F4;
     display: flex;
     border-radius: 30px;
     padding: 30px;
+
     .left-col{
       flex: 1;
+      ul{
+        list-style-type: none;
+        gap: 10px;
+        margin-right: 100px;
+        margin-bottom: 20px;
+        li{
+          display: inline-block;
+          background-color: #C4DFDF;
+          padding: 10px 20px;
+          border-radius: 15px;
+          margin-bottom: 10px;
+        }
+      }
     }
     .right-col{
       flex: 1;
+      p{
+        margin-bottom: 20px;
+      }
     }
   }
 }
