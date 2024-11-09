@@ -193,7 +193,7 @@ h1{
   }
   .cover-txt{
     flex: 1;
-    padding: 30px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,19 +236,26 @@ h1{
   }
 }
 .gradient-background {
-    /* background: linear-gradient(300deg, #522258, #8C3061, #D95F59); */
-    background: linear-gradient(300deg, #134B70, #508C9B, #EEEEEE);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-  } 
-  .subtitle{
-    font-size: 25px;
+  /* background: linear-gradient(300deg, #522258, #8C3061, #D95F59); */
+  background: linear-gradient(300deg, #134B70, #508C9B, #EEEEEE);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+.about-me{
+  .holder{
+    background-color: var( --hover-col);
+    display: flex;
+    border-radius: 30px;
+    padding: 30px;
+    .left-col{
+      flex: 1;
+    }
+    .right-col{
+      flex: 1;
+    }
   }
-  .profilepic{
-    height: 450px;
-    border-radius: 50vh;
-    /* margin-bottom: 20vh; */
-  }
+}
+
 .text{
   text-align: justify;
   margin-top: 3vh;
@@ -318,9 +325,6 @@ h1{
   }
   #education {
     width: 100%;
-  }
-  .profilepic{
-    height: 300px;
   }
   .gif{
     height: 15vh;
