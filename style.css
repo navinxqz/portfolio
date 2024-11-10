@@ -294,8 +294,8 @@ h3{
 #education .edu-container::before{
     content: "";
     position: absolute;
-    top: 20px;
-    left: -12px;
+    top: 22px;
+    left: -13.5px;
     width: 25px;
     height: 25px;
     background: var(--bg-color);
@@ -318,27 +318,27 @@ h3{
     position : relative;
   }
   h3{
-    line-height: 70px;
-    font-size: 30px;
+    /* line-height: 70px; */
+    font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: var(--txt-color);
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
   h4{
     font-size: 30px;
     font-weight: 500;
-    background: var(--hover-col);
+    background: #C4DFDF;
     padding: 5px 15px;
     margin-top: 10px;
-    margin-left: -5px;
+    margin-left: -10px;
     margin-bottom: 10px;
     display: inline-block;
     border-radius: 10px;
   }
   p{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: lighter;
     margin-top: -5px;
     margin-bottom: 10px;
