@@ -15,14 +15,11 @@
 }
 
 body{
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   background-color: #EEEEEE;
   margin: 0;
   font-size: 18px;
   line-height: 1.5;
-  /* padding: 0; */
-  /* box-sizing: border-box; */
-
   a{
     text-decoration: none;
     color: var(--txt-color);
@@ -208,8 +205,10 @@ h1{
     }
     .social-links{
       a{
+        transition: 0.3s;
+        padding: 8px 2px;
         &:hover{
-          background-color: var(--hover-col);
+          background: var(--hover-col);
           border-radius: 10px;
           text-decoration: none;
         }
@@ -359,10 +358,5 @@ h3{
     height: 15vh;
     width: 15vh;
   }
-  /* .row.row-cols-1.mx-xxl-6.mx-3.mx-md-2.g-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
 }
 
