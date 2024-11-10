@@ -288,6 +288,20 @@ h3{
   text-align: justify;
   margin-top: 3vh;
 }
+#education .edu-container:last-child{
+    padding-bottom: 20px;
+}
+#education .edu-container::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -12px;
+    width: 25px;
+    height: 25px;
+    background: var(--bg-color);
+    border: 2px solid #134B70;
+    border-radius: 50%;
+}
 #education{
   .edu-title{
     font-size: 50px;
@@ -304,7 +318,7 @@ h3{
     position : relative;
   }
   h3{
-    line-height: 90px;
+    line-height: 70px;
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -316,36 +330,21 @@ h3{
     font-size: 30px;
     font-weight: 500;
     background: var(--hover-col);
-    padding: 5px 20px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-left: -5px;
     margin-bottom: 10px;
     display: inline-block;
     border-radius: 10px;
   }
-  last-child{
-    padding-bottom: 0;
-  }
-  ::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -10px;
-    width: 20px;
-    height: 20px;
-    background: var(--hover-col);
-    border: 2px solid #134B70;
-    border-radius: 50%;
+  p{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: -5px;
+    margin-bottom: 10px;
   }
 }
 
-.ins-title{
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 1vh;
-}
-#dot{
-  margin-top: 10px;
-  margin-right: 40px;
-}
 .img-edu{
   display: grid;
   grid-row: 2 / span 3;
