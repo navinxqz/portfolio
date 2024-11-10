@@ -297,10 +297,43 @@ h3{
     margin-bottom: 6vh;
   }
   .edu-container{
-    padding: 0 0 20px 20px;
+    padding: 0 0 20px 50px;
     margin-top: -2px;
+    margin-left: 50px;
     border-left: 2px solid #134B70;
     position : relative;
+  }
+  h3{
+    line-height: 90px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: var(--txt-color);
+    margin-bottom: 10px;
+  }
+  h4{
+    font-size: 30px;
+    font-weight: 500;
+    background: var(--hover-col);
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  last-child{
+    padding-bottom: 0;
+  }
+  ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background: var(--hover-col);
+    border: 2px solid #134B70;
+    border-radius: 50%;
   }
 }
 
