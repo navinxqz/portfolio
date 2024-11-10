@@ -288,19 +288,22 @@ h3{
   text-align: justify;
   margin-top: 3vh;
 }
-
 #education{
-    width: 70vh;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10vh;
-}
-.edu-title{
+  .edu-title{
     font-size: 50px;
     font-weight: bolder;
     padding: 0;
-    margin-bottom: 7vh;
+    margin-top: 50px;
+    margin-bottom: 6vh;
+  }
+  .edu-container{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #134B70;
+    position : relative;
+  }
 }
+
 .ins-title{
   font-size: 20px;
   font-weight: bold;
