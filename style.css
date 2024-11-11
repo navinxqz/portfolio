@@ -9,7 +9,6 @@
     --bg-color: #EEEEEE;
     --txt-color: #31363F;
     --border-color: #000000;
-
     --hover-col: #E7F6F2;
     --hover-bg: #395B64;
 }
@@ -231,6 +230,10 @@ h1{
       border-radius: 50vh;
       -webkit-user-drag: none;
       pointer-events: none;
+
+      @media(max-width: 768px){
+        height: 400px;
+      }
     }
   }
 }
@@ -338,10 +341,16 @@ h3{
     border-radius: 10px;
   }
   p{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: lighter;
     margin-top: -5px;
     margin-bottom: 10px;
+  }
+  .edu-image{
+    width: 20%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
