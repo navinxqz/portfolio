@@ -405,17 +405,37 @@ h3{
   }
   .project_desc{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    /* bottom: 0; */
+    left: 20px;
     padding: 20px;
-    background-color: #1c1d25;
+    top: 50%;
+    /* background-color: #1c1d25; */
     color: white;
-    width: 100%;
+    text-align: left;
+    max-width: 550px;
     opacity: 0;
-    transition: all 450ms ease;
+    transition: transform 450ms, opacity 300ms;
     transform: translateY(100%);
     z-index: 3;
-    border-radius: 0 0 20px 20px;
+    /* border-radius: 0 0 20px 20px; */
+  }
+  .project_title{
+    font-size: 40px;
+    color: white;
+    text-align: left;
+  }
+  .project_subtitle{
+    color: white;
+    text-align: left;
+  }
+  .project_text{
+    margin: 16px 0;
+    color: white;
+    text-align: left;
+  }
+  .project_links{
+    margin-right: 16px;
+    text-align: left;
   }
   .project_wrapper::before{
     content: "";
