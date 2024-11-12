@@ -389,6 +389,17 @@ h3{
   margin-right: 10px; */
   align-items: center;
 }
+#projects{
+  margin-bottom: 140px;
+  .project_img{
+    width: 100%;
+    transition: all 500ms ease;
+  }
+  
+}
+#projects:last-child{
+  margin-bottom: 40px;
+}
 @media (max-width: 768px) {
   .skill-grid {
     grid-template: repeat(auto-fit, minmax(250px, 1fr));
