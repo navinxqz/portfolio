@@ -417,7 +417,6 @@ h3{
     transition: transform 450ms, opacity 300ms;
     transform: translateY(100%);
     z-index: 3;
-    /* border-radius: 0 0 20px 20px; */
   }
   .project_title{
     font-size: 40px;
@@ -452,17 +451,17 @@ h3{
     transform: translateY(100%);
     will-change: transform, opacity;
   }
+  .project_wrapper:hover::before{
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  .project_wrapper:hover .project_desc{
+    opacity: 1;
+    transform: translateY(-50%);
+  }
 }
 #projects:last-child{
   margin-bottom: 40px;
-}
-#projects:hover .project_wrapper::before{
-  opacity: 0.7;
-  transform: translateY(0);
-}
-#projects:hover .project_desc{
-  opacity: 1;
-  transform: translateY(-50%);
 }
 @media (max-width: 768px) {
   .skill-grid {
