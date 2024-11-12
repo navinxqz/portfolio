@@ -476,6 +476,13 @@ h3{
   .project_links{
     margin-right: 16px;
     text-align: left;
+    a{
+      color: white;
+      &:hover{
+        text-decoration: none;
+        color: var(--sec-color);
+      }
+    }
 
     @media(max-width: 480px){
       display: flex;
@@ -502,7 +509,7 @@ h3{
   }
   .project_wrapper:hover::before{
     transform: translateY(0);
-    opacity: 0.7;
+    opacity: 0.9;
   }
   .project_wrapper:hover .project_desc{
     opacity: 1;
