@@ -480,7 +480,7 @@ h3{
       color: white;
       &:hover{
         text-decoration: none;
-        color: var(--sec-color);
+        color: #A64D79;
       }
     }
 
