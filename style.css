@@ -394,14 +394,22 @@ h3{
   .project_img{
     width: 100%;
     transition: all 500ms ease;
+
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
   .project_wrapper{
     display: flex;
+    flex-direction: column;
     box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    /* padding-top: 40px; */
+    flex: 1 1 calc(50% - 20px); /* Two projects per row, adjust as needed */
+    max-width: calc(60% - 20px);
   }
   .project_desc{
     position: absolute;
