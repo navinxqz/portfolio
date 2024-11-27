@@ -452,16 +452,18 @@ h3{
   .project_date{
     @media(max-width: 768px){
       text-align: center;
+      font-size: 10px;
     }
     @media(max-width: 480px){
       text-align: center;
+      font-size: 10px;
     }
   }
   .project_subtitle{
-    color: white;
+    color: var(--sec-color);
     text-align: left;
     @media(max-width: 768px){
-      font-size: 14px;
+      font-size: 12px;
       text-align: center;
     }
   }
@@ -471,11 +473,12 @@ h3{
     text-align: left;
 
     @media(max-width: 768px){
-      font-size: 13px;
+      font-size: 12px;
       text-align: center;
     }
     @media(max-width: 480px){
       display: none;
+      font-size: 12px;
     }
   }
   .project_links{
