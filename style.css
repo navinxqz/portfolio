@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@
 }
 
 body{
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #EEEEEE;
   margin: 0;
   font-size: 18px;
