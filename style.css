@@ -268,6 +268,29 @@ h3{
 
     .left-col{
       flex: 1;
+      /* background-color: var(--bg-color); */
+      padding-right: -50px;
+      .about-img{
+        display: flex;
+        background-color: var(--bg-color);
+        justify-content: center;
+        /* align-items: center; */
+        height: 500px;
+        border-radius: 2rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 50px;
+
+        @media(max-width: 768px){
+          margin-left: 20px;
+        }
+        @media(max-width: 480px){
+          height: 250px;
+          margin-top: 0px;
+          margin-right: 8px;
+          padding-right: 0px;
+        }
+      }
       ul{
         list-style-type: none;
         gap: 10px;
