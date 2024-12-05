@@ -13,4 +13,9 @@ document.querySelectorAll('.project_links a').forEach(link => {
         img.src = img.dataset.originalSrc;
     });
 });
+document.querySelector('.contact button').addEventListener('click', function(){
+    window.location.href = 'mailto:cyt.navin6@gmail.com';
+}
+);
+
   
