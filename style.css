@@ -338,7 +338,7 @@ h3{
     font-size: 50px;
     font-weight: bolder;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 6vh;
   }
   .edu-container{
@@ -406,15 +406,15 @@ h3{
   border-color: #134B70;
   /* border-style:solid; */
 }
-.skillHeading{
-  text-align: center;
-  font-size: 50px;
-  font-weight: bolder;
-  margin-bottom: 10vh;
-}
 #skill{
   .about-container{
     display: flex;
+  }
+  .skillHeading{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 10vh;
   }
   .skill-details{
     display: flex;
