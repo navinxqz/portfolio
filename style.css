@@ -420,14 +420,22 @@ h3{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    /* border-radius: 2rem;
+  border-color: var(--primary-color);
+  border-style:solid; */
   }
   .details{
     padding: 3rem;
     flex: 1;
-    /* background: white; */
-    border-radius: 2rem;
-    border-color: var(--primary-color);
+    border-left: 0px solid var(--primary-color);
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-style:solid;
     text-align: center;
+  }
+  .details:not(:last-child) {
+    border-right: 1px solid var(--primary-color);
   }
   .skill-subtitle{
     color: var(--txt-color);
@@ -441,6 +449,7 @@ h3{
   }
   .article-container{
     display: flex;
+    padding-left: -3rem;
     text-align: initial;
     flex-wrap: wrap;
     gap: 2.5rem;
@@ -450,9 +459,10 @@ h3{
 
     article{
       display: flex;
-      width: 10rem;
+      margin-left: 0px;
+      width: 8rem;
       justify-content: space-around;
-      gap: 0.5rem;
+      gap: 1rem;
     }
   }
 }
