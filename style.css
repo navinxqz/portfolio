@@ -412,6 +412,50 @@ h3{
   font-weight: bolder;
   margin-bottom: 10vh;
 }
+#skill{
+  .about-container{
+    display: flex;
+  }
+  .skill-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .details{
+    padding: 3rem;
+    flex: 1;
+    /* background: white; */
+    border-radius: 2rem;
+    border-color: var(--primary-color);
+    text-align: center;
+  }
+  .skill-subtitle{
+    color: var(--txt-color);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  .skill-icon{
+    height: 2rem;
+    cursor: default;
+  }
+  .article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    /* margin-right: 5px; */
+    flex-direction: row;
+    justify-content: space-around;
+
+    article{
+      display: flex;
+      width: 10rem;
+      justify-content: space-around;
+      gap: 0.5rem;
+    }
+  }
+}
 .About1{
   align-items: center;
 }
