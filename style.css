@@ -624,6 +624,12 @@ h3{
   }
 }
 #contact{
+  .contact-title, .sub{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+  }
   .content{
     display: flex;
     align-items: center;
