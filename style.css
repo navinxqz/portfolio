@@ -623,4 +623,74 @@ h3{
     width: 15vh;
   }
 }
+#contact{
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  .left-side{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    ::before{
+      content: '';
+      position: absolute;
+      height: 70%;
+      width: 2px;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #1c1d25;
+    }
 
+    .contact-icon{
+      height: 2rem;
+    }
+    .info{
+      margin: 14px;
+      text-align:initial;
+
+      div{
+        margin-bottom: 20px;
+        p{
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+  }
+  .right-side{
+    width: 60%;
+    margin-left: 80px;
+
+    .input-box{
+      height: 50px;
+      width: 100%;
+      margin: 12px 0;
+      input, textarea{
+        height: 100%;
+        width: 70%;
+        border: none;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0 20px;
+        resize: none;
+      }
+    }
+    .message-box{
+      min-height: 110px;
+    }
+    .button{
+      outline: none;
+      border: none;
+      border-radius: 6px;
+    }
+  }
+  
+}
