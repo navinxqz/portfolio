@@ -726,6 +726,11 @@ h3{
   }
 }
 .showcase{
+  .section-title{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
   .illustrations{
     display: flex;
     justify-content: center;
@@ -733,8 +738,18 @@ h3{
     margin-top: 10px;
     margin-right: 10px;
     padding-right: 10px;
+
     img{
       height: 20rem;
+      @media (max-width: 925px){
+        height: 15rem;
+      }
+      @media (max-width: 680px){
+        height: 10rem;
+      }
+      @media(max-width: 480px){
+        height: 8rem;
+      }
     }
   }
 }
