@@ -292,27 +292,22 @@
     <section id="contact" class="container">
       <p>Get in Touch</p>
       <h1 class="contact-title">Contact Me</h1>
-
-      <!--<div class="contact-container">
-        <h2 class="contact-title">Contact Me</h2>
-        <div class="contact-form">
-          <form action="mailto:cyt.navin6@gmail.com" method="post" enctype="text/plain">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" class="form-control" required></textarea>
-            </div>
-            <button type="submit" class="button">Send</button>
-          </form>
-        </div> -->
-      </div>
+      <div class="contact-container">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" class="form-control" required></textarea>
+        </div>
+        <button type="button" class="button" onclick="sendEmail()">Send</button>
+      </form> 
     </section>
 
     <section id="footer" class="gradient-background">
