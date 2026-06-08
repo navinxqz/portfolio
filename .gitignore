@@ -1,0 +1,13 @@
+# Ignore large media files
+*.mp4
+*.zip
+*.rar
+
+# Ignore Python virtual environment
+.venv/
+__pycache__/
+
+# Ignore standard build/node folders (if applicable)
+node_modules/
+dist/
+build/

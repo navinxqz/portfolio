@@ -1,0 +1,952 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md. Nawshin Navin — Portfolio</title>
+<meta name="description" content="Portfolio of Md. Nawshin Navin — Computer Science undergraduate, developer, researcher, and artist based in Dhaka, Bangladesh.">
+<link rel="icon" type="image/png" href="Profile Picture/webpage_Logo.png">
+<link rel="apple-touch-icon" href="Profile Picture/webpage_Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <img src="Profile Picture/webpage_Logo.png" alt="Navin Logo" class="nav-logo-img">
+    <span class="nav-logo-text">Navin<span>.</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#publications">Research</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#artworks">Artworks</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#achievements">Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#experience" class="mobile-link">Experience</a>
+  <a href="#education" class="mobile-link">Education</a>
+  <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#skills" class="mobile-link">Skills</a>
+  <a href="#publications" class="mobile-link">Research</a>
+  <a href="#activities" class="mobile-link">Activities</a>
+  <a href="#artworks" class="mobile-link">Artworks</a>
+  <a href="#certificates" class="mobile-link">Certificates</a>
+  <a href="#achievements" class="mobile-link">Awards</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-accent-blob"></div>
+  <div class="hero-layout">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Computer Science &amp; Engineering</div>
+      <h1>Md. Nawshin<br><strong>Navin</strong></h1>
+      <p class="hero-role">Data Analyst · Developer · Researcher</p>
+      <p class="hero-summary">Computer Science undergraduate with proven experience building end-to-end projects using Python, Java, and C#. Adept at applying machine learning, statistical modeling, and data visualization to solve real-world problems.</p>
+      
+      <!-- Button Grid - 3x2 Layout -->
+      <div class="hero-buttons-grid">
+        <!-- Top Row -->
+        <a href="#projects" class="btn-primary">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          View Work
+        </a>
+        <a href="#contact" class="btn-outline">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Contact Me
+        </a>
+        <a href="./Certificates/Resume.pdf" class="btn-outline">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          My Resume
+        </a>
+        
+        <!-- Bottom Row -->
+        <a href="https://github.com/navinxqz" target="_blank" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.instagram.com/avocado_.exe/" target="_blank" class="btn-outline" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg> Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/md-nawshin-navin/" target="_blank" class="btn-outline" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg> LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo-wrapper fade-in">
+      <img src="Profile Picture/aboutmepic.png" alt="Md. Nawshin Navin" class="hero-photo">
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-number">3.73<span>/4</span></div>
+      <div class="stat-label">Current GPA</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">4<span>+</span></div>
+      <div class="stat-label">Publications</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5<span>+</span></div>
+      <div class="stat-label">Projects</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <div class="section-tag">01 — About</div>
+    <h2>Who <em>I Am</em></h2>
+  </div>
+  <div class="about-grid">
+    <img src="Profile Picture/img3.jpeg" alt="Navin portrait" class="about-portrait fade-in">
+    <div class="about-text fade-in">
+      <p>Hi I’m Navin, a third-year undergraduate Computer Science and Engineering student at <a href = "https://www.aiub.edu/" target = "_blank" style="color: #A64D79;  font-weight: bold;">American International Univeristy-Bangladesh (AIUB)</a>, driven by a passion for technology, creativity and continuous learning. Over the past two years, I’ve been building my skills in software development, focusing on C# and .NET frameworks, while also exploring web development. 
+        My journey is a blend of hands-on projects, problem-solving and a desire to make things that are both functional and accessible. I completed my Intermediate studies at the prestigious <a href = "https://ndc.edu.bd/" target = "_blank" style="color: #A64D79;  font-weight: bold;">Notre Dame College</a>, which played a significant role in shaping my dedication and curiosity in the field of science and technology.</p>
+
+      <p>In addition to coding, I’m a digital artist and enjoy expressing my creativity in both design and illustration. My interests extend to web development as well, where I’m building and learning to create dynamic webpages, UI interactions. Each of my projects reflect my curiosity and love for creative problem-solving, from developing user-friendly applications to creating digital art.</p>
+      <p>My aim is to contribute to open-source projects, that solve real-world problems and make some positive impact 🌱 I strive to make each day a step forward in becoming someone I can be proud of, constantly driven by a belief in gratitude and the pursuit of knowledge. <a style="color: #A64D79;  font-weight: bold;">"Alhamdulillah for everything"</a>_this mindset keeps me grounded and motivated to learn, create and inspire.</p>
+      <!-- <p>I'm a Computer Science & Engineering undergraduate at American International University-Bangladesh with a strong foundation in software development and data science. I build full-stack projects across multiple languages and frameworks, and I'm driven by a passion for making sense of complex data.</p>
+      <p>My research spans computer vision, medical imaging, and sign language recognition — work published in IEEE journals. Beyond code, I've led creative teams and hold a perfect HSC score from Notre Dame College.</p> -->
+      <!-- <p>I'm currently interning at Itransition as a developer and at CodeAlpha in data science, while pursuing research under faculty supervision in social VR and medical AI.</p> -->
+      <!-- <div class="about-contacts">
+        <div class="contact-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          58/19-A North Mugda, Dhaka-1214, Bangladesh
+        </div>
+        <div class="contact-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          <a href="mailto:navinmdnawshin@gmail.com">navinmdnawshin@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +8801975025141
+        </div>
+        <div class="contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <a href="https://linkedin.com/in/md-nawshin-navin" target="_blank">linkedin.com/in/md-nawshin-navin</a>
+        </div>
+        <div class="contact-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <a href="https://github.com/navinxqz" target="_blank">github.com/navinxqz</a>
+        </div>
+      </div> -->
+    </div>
+    <div class="about-aside">
+      <div class="about-card fade-in" style="transition-delay:0.1s">
+        <h4>Current Status</h4>
+        <p>BSc CSE student at AIUB · Intern Developer at Itransition · Data Science Intern at CodeAlpha · Active researcher in medical AI & computer vision</p>
+      </div>
+      <div class="about-card fade-in" style="transition-delay:0.2s">
+        <h4>Research Focus</h4>
+        <p>Medical image analysis, object detection (YOLO family), eye disease classification, sign language recognition, and social VR attention modeling</p>
+      </div>
+      <div class="about-card fade-in" style="transition-delay:0.3s">
+        <h4>Looking For</h4>
+        <p>Software development or data science roles where I can apply multi-language technical expertise and deep problem-solving ability to make a meaningful impact</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header">
+    <div class="section-tag">02 — Experience</div>
+    <h2>Work <em>History</em></h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-meta">Ongoing</div>
+  <div class="timeline-title">Intern Developer</div>
+  <div class="timeline-org">Itransition · Dhaka, Bangladesh</div>
+  <ul style="font-size:0.88rem; color:var(--text-mid); margin-top:0.5rem; line-height:1.7; padding-left:1.2rem;">
+    <li style="margin-bottom:0.4rem;"><strong>Engineered an enterprise-grade web application</strong> from scratch using C#, .NET, and JavaScript to master complex business logic, resulting in a production-ready system built strictly on OOP principles and MVC architecture.</li>
+    <li style="margin-bottom:0.4rem;"><strong>Collaborated in an agile-driven environment</strong> using Git version control and participating in code reviews to simulate real-world team workflows, which significantly reduced debugging cycles and ensured high code maintainability.</li>
+    <li style="margin-bottom:0rem;"><strong>Implemented industry-standard design patterns and secure APIs</strong> under the mentorship of senior engineers to bridge the gap between academic theory and commercial software development, proving the agility to rapidly adapt to enterprise tech stacks.</li>
+  </ul>
+</div>
+
+    <div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-meta">May 2026 — Jun 2026</div>
+  <div class="timeline-title">Data Science Intern</div>
+  <div class="timeline-org">CodeAlpha · Remote</div>
+  <ul style="font-size:0.88rem; color:var(--text-mid); margin-top:0.5rem; line-height:1.7; padding-left:1.2rem;">
+    <li style="margin-bottom:0.4rem;"><strong>Engineered end-to-end predictive pipelines</strong> using Scikit-Learn, Pandas, and NumPy to accurately forecast used car resale valuations based on multi-dimensional vehicle features, establishing total data integrity by treating outliers and structural anomalies.</li>
+    <li style="margin-bottom:0.4rem;"><strong>Applied advanced feature engineering</strong> including temporal age extraction and non-linear log transformations (<code>np.log1p</code>) to resolve highly skewed metrics, alongside robust <code>ColumnTransformer</code> layouts to safely automate categorical encoding without data leakage.</li>
+    <li style="margin-bottom:0rem;"><strong>Benchmarked ensemble architectures</strong> across five regression models, optimizing a final <strong>Random Forest Regressor</strong> to achieve a peak predictive accuracy of <strong>R² = 0.963</strong> and an MSE of <strong>0.817</strong>, encapsulated into a production-ready real-time inference function.</li>
+  </ul>
+</div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-meta">Jun 2020 — May 2021</div>
+      <div class="timeline-title">Joint Secretary, Creative Department</div>
+      <div class="timeline-org">Notre Dame Art Club · Dhaka, Bangladesh</div>
+      <p style="font-size:0.88rem;color:var(--text-mid);margin-top:0.5rem;line-height:1.7">Led creative initiatives and coordinated team-based artistic projects. Managed event planning and execution within departmental responsibilities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-header">
+    <div class="section-tag">03 — Education</div>
+    <h2>Academic <em>Background</em></h2>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <!-- AIUB Logo -->
+      <img src="./asset/aiub-seeklogo.png" alt="AIUB Logo" class="edu-logo">
+      <div class="edu-degree">Bachelor of Science in Computer Science &amp; Engineering</div>
+      <div class="edu-school">American International University-Bangladesh · Dhaka</div>
+      <div class="edu-meta">
+        <span class="edu-date">Jan 2023 — Ongoing</span>
+        <span class="edu-gpa">GPA 3.73 / 4.00</span>
+      </div>
+    </div>
+    <div class="edu-card" style="transition-delay:0.1s">
+      <!-- Notre Dame College Logo -->
+      <img src="./asset/notre-dame-college-dhaka-seeklogo.png" alt="Notre Dame College Logo" class="edu-logo">
+      <div class="edu-degree">Higher Secondary Certificate (Science)</div>
+      <div class="edu-school">Notre Dame College · Dhaka, Bangladesh</div>
+      <div class="edu-meta">
+        <span class="edu-date">Jun 2019 — Jun 2021</span>
+        <span class="edu-gpa">GPA 5.00 / 5.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header">
+    <div class="section-tag">04 — Projects</div>
+    <h2>Selected <em>Work</em></h2>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="./Projects/MediLink-TUI-Projectview.jpeg" alt="MEDI-LINK-TUI Project" class="project-card-img" loading="lazy">
+      <div class="project-card-body">
+        <div class="project-header">
+          <div class="project-name">MEDI-LINK-TUI</div>
+          <div class="project-date">Mar – May 2026</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">C++</span>
+          <span class="tech-tag">Arduino</span>
+          <span class="tech-tag">OpenCV</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Real-time medication safety system with tangible interface</li>
+          <li>Python-based detection pipeline with C++ firmware for embedded hardware control</li>
+          <li>Telegram chatbot sending automated alerts on each scan for dangerous or expired medication pairs</li>
+        </ul>
+        <div class="project-footer">
+          <a href="https://github.com/navinxqz/MEDI-LINK-TUI" target="_blank" class="project-link">
+            GitHub Repository
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card" style="transition-delay:0.05s">
+      <img src="https://cdn.akamai.steamstatic.com/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/home_header_bg_night_english.gif?t=1688069940" alt="Video Game Sales Analysis" class="project-card-img" loading="lazy">
+      <div class="project-card-body">
+        <div class="project-header">
+          <div class="project-name">Video Game Sales Analysis &amp; Prediction</div>
+          <div class="project-date">Dec 2025 – Jan 2026</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">R</span>
+          <span class="tech-tag">caret</span>
+          <span class="tech-tag">ggplot2</span>
+          <span class="tech-tag">rpart</span>
+          <span class="tech-tag">cluster</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Analyzed 16,000+ video game records combining VGChartz sales and Metacritic ratings</li>
+          <li>Three ML models: Decision Tree (ESRB classification), K-Means (segmentation), Linear Regression (sales prediction)</li>
+          <li>Comprehensive EDA: bar charts, boxplots, heatmaps, scatter plots</li>
+        </ul>
+        <div class="project-footer">
+          <a href="https://github.com/navinxqz/Video-Game-Sales-Analysis-Prediction" target="_blank" class="project-link">
+            GitHub Repository
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+<div class="project-card" style="transition-delay:0.075s">
+  <img src="./Projects/1780926122.png" alt="AI NLP Hub" class="project-card-img" loading="lazy">
+  <div class="project-card-body">
+    <div class="project-header">
+      <div class="project-name">AI NLP Hub — Gemini-Powered NLP Web App</div>
+      <div class="project-date">Jan 2026</div>
+    </div>
+    <div class="project-tech">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Streamlit</span>
+      <span class="tech-tag">Google Gemini AI</span>
+      <span class="tech-tag">NLP</span>
+    </div>
+    <ul class="project-bullets">
+      <li>Interactive web application for NLP tasks powered by Google Gemini API with user authentication and sidebar navigation</li>
+      <li>Implemented sentiment analysis with emoji/color feedback, English ↔ Bangla translation in more native way, and creative content generation (jokes, poetry, stories)</li>
+      <li>Word frequency analysis module with data visualization charts for text analytics</li>
+    </ul>
+    <div class="project-footer">
+      <a href="https://github.com/navinxqz/NLP-App" target="_blank" class="project-link">
+        GitHub Repository
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+    <div class="project-card" style="transition-delay:0.1s">
+      <img src="./Projects/war.png" alt="War Effect Project" class="project-card-img" loading="lazy">
+      <div class="project-card-body">
+        <div class="project-header">
+          <div class="project-name">War Effect — 2D War Simulation</div>
+          <div class="project-date">May – Jul 2025</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">C++</span>
+          <span class="tech-tag">OpenGL</span>
+          <span class="tech-tag">GLUT</span>
+          <span class="tech-tag">irrKlang</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Interactive graphics application rendering 2D sprites with texture mapping and alpha blending</li>
+          <li>irrKlang audio engine for synchronized sound effects (explosions, gunfire, weather ambience)</li>
+          <li>Multi-scene environment with dynamic weather effects (rain, thunder, camera shake)</li>
+        </ul>
+        <div class="project-footer">
+          <a href="https://github.com/navinxqz/War-Effect-" target="_blank" class="project-link">
+            GitHub Repository
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card" style="transition-delay:0.125s">
+      <img src="./Projects/1780925124.png" alt="Lost-Sole Platformer Game" class="project-card-img" loading="lazy">
+      <div class="project-card-body">
+        <div class="project-header">
+          <div class="project-name">Lost-Sole — 2D Platformer Game Engine</div>
+          <div class="project-date">Feb 2025</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">C++</span>
+          <span class="tech-tag">Cocos2d-x</span>
+          <span class="tech-tag">Game Development</span>
+          <span class="tech-tag">OOP</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Developing a 2D side-scrolling platformer using C++ and Cocos2d-x engine with custom velocity-based physics system</li>
+          <li>Engineered framerate-independent movement with custom gravity calculations and ground collision detection in game loop</li>
+          <li>Built sprite animation state machine dynamically sequencing 70+ frames for complex player states (idle, walk, jump, fall, fight)</li>
+        </ul>
+        <div class="project-footer">
+          <a href="https://github.com/navinxqz/Lost-Sole" target="_blank" class="project-link">
+            GitHub Repository
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card" style="transition-delay:0.15s">
+      <img src="https://github.com/navinxqz/GameHub/blob/main/asset/project_ss/admin_home.png?raw=true" alt="Game Hub Management System" class="project-card-img" loading="lazy">
+      <div class="project-card-body">
+        <div class="project-header">
+          <div class="project-name">Game Hub Management System</div>
+          <div class="project-date">Sep – Nov 2024</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">C#</span>
+          <span class="tech-tag">.NET 8</span>
+          <span class="tech-tag">Windows Forms</span>
+          <span class="tech-tag">SQL Server</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Windows Forms-based digital game distribution system using OOP principles</li>
+          <li>Admin Dashboard with full CRUD operations for games, users, and categories</li>
+          <li>SQL Server integration and real-time notification system for updates</li>
+        </ul>
+        <div class="project-footer">
+          <a href="https://github.com/navinxqz/GameHub" target="_blank" class="project-link">
+            GitHub Repository
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card" style="transition-delay:0.2s">
+      <img src="./Projects/aiubgym.png" alt="AIUB Gym Management System" class="project-card-img" loading="lazy">
+      <div class="project-card-body">
+        <div class="project-header">
+          <div class="project-name">AIUB Gym Management System</div>
+          <div class="project-date">Jul – Aug 2023</div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Java Swing</span>
+          <span class="tech-tag">JDBC</span>
+          <span class="tech-tag">SQL</span>
+        </div>
+        <ul class="project-bullets">
+          <li>Java-based GUI application for gym membership management with user authentication</li>
+          <li>Subscription management and personalized workout plan modules</li>
+          <li>Admin Panel for user and database management</li>
+        </ul>
+        <div class="project-footer">
+          <a href="https://github.com/navinxqz/gym-management-system" target="_blank" class="project-link">
+            GitHub Repository
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+<div class="project-card" style="transition-delay:0.25s">
+  <img src="https://raw.githubusercontent.com/navinxqz/Movie-List-Project/main/Sample%20Output.png" alt="Movie Series Management System" class="project-card-img" loading="lazy">
+  <div class="project-card-body">
+    <div class="project-header">
+      <div class="project-name">Movie Series Management Console Application</div>
+      <div class="project-date">Jun – Jul 2024</div>
+    </div>
+    <div class="project-tech">
+      <span class="tech-tag">C#</span>
+      <span class="tech-tag">.NET 8</span>
+      <span class="tech-tag">Console App</span>
+      <span class="tech-tag">OOP</span>
+    </div>
+    <ul class="project-bullets">
+      <li>Console-based CRUD application for managing movie series repository with full create, read, update, delete operations</li>
+      <li>Implemented OOP principles: abstract classes, interfaces, inheritance, encapsulation, and collection handling</li>
+      <li>CLI interface for listing series, inserting new entries, updating records, deleting series, and viewing detailed information</li>
+    </ul>
+    <div class="project-footer">
+      <a href="https://github.com/navinxqz/Movie-Listing-Project" target="_blank" class="project-link">
+        GitHub Repository
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header">
+    <div class="section-tag">05 — Skills</div>
+    <h2>Technical <em>Expertise</em></h2>
+  </div>
+  <div class="skills-layout">
+    <div class="skill-category">
+      <div class="skill-cat-label">Programming Languages</div>
+      <div class="skill-chips">
+        <span class="skill-chip highlight">Python</span>
+        <span class="skill-chip highlight">C#</span>
+        <span class="skill-chip">C++</span>
+        <span class="skill-chip">Java</span>
+        <span class="skill-chip">R</span>
+        <span class="skill-chip">SQL</span>
+        <span class="skill-chip">C</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-label">Frameworks & AI</div>
+      <div class="skill-chips">
+        <span class="skill-chip highlight">PyTorch</span>
+        <span class="skill-chip highlight">TensorFlow</span>
+        <span class="skill-chip">ASP.NET</span>
+        <span class="skill-chip">Node.js</span>
+        <span class="skill-chip">PHP</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-label">Web & Databases</div>
+      <div class="skill-chips">
+        <span class="skill-chip">HTML</span>
+        <span class="skill-chip">CSS</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">jQuery</span>
+        <span class="skill-chip highlight">PostgreSQL</span>
+        <span class="skill-chip">MySQL</span>
+        <span class="skill-chip">MS SQL Server</span>
+        <span class="skill-chip">MongoDB</span>
+        <span class="skill-chip">Oracle</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-label">Tools & Platforms</div>
+      <div class="skill-chips">
+        <span class="skill-chip highlight">Git / GitHub</span>
+        <span class="skill-chip">Power BI</span>
+        <span class="skill-chip">Figma</span>
+        <span class="skill-chip">Postman</span>
+        <span class="skill-chip">VS Code</span>
+        <span class="skill-chip">R Studio</span>
+        <span class="skill-chip">Overleaf</span>
+        <span class="skill-chip">AutoCAD</span>
+        <span class="skill-chip">XAMPP</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-label">Soft Skills</div>
+      <div class="skill-chips">
+        <span class="skill-chip">Leadership</span>
+        <span class="skill-chip">Problem Solving</span>
+        <span class="skill-chip">Teamwork</span>
+        <span class="skill-chip">Project Management</span>
+        <span class="skill-chip">Adaptability</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-header">
+    <div class="section-tag">06 — Research</div>
+    <h2>Publications &amp; <em>Research</em></h2>
+  </div>
+  <div class="pub-list">
+    <div class="pub-item">
+      <div>
+        <div class="pub-title">The Perceptual Distraction Budget: A Unified Attentional Framework for Gaze, Motion Redirection in Social VR</div>
+        <div class="pub-supervisor">Supervisor: Dr. Muhammad Firoz Mridha — Professor and Head, Dept. of CS</div>
+      </div>
+      <span class="pub-badge ongoing">Ongoing</span>
+    </div>
+    <div class="pub-item">
+      <div>
+        <div class="pub-title">M2C-Net: A Lightweight Attention-Based Framework for Non-Invasive Eye Disease Classification from Scleral Images</div>
+        <div class="pub-venue">IEEE 2nd International Conference on Quantum Photonics, AI, and Networking (QPAIN) · Apr 2026</div>
+        <div class="pub-supervisor">Achieved 96.55% accuracy · 2.83M parameters · Mobile-optimized · Supervisor: Dr. Kamruddin Md. Nur</div>
+      </div>
+      <span class="pub-badge ongoing">Ongoing</span>
+    </div>
+    <div class="pub-item">
+      <div>
+        <div class="pub-title">Accurate Anemia Disease Detection Using Eye Conjunctiva Features with Improved YOLOv9</div>
+        <div class="pub-venue">Institute of Electrical and Electronics Engineers (IEEE) · Jan 2026</div>
+        <div class="pub-supervisor">Real-time anemia detection using conjunctiva images · Supervisors: Shahnaj Parvin, Dr. Kamruddin Md. Nur</div>
+      </div>
+      <span class="pub-badge published"><a href="https://ieeexplore.ieee.org/abstract/document/11338320" target="_blank">Read →</a></span>
+    </div>
+    <div class="pub-item">
+      <div>
+        <div class="pub-title">Bilingual Sign Language Recognition: A YOLOv11-Based Model for Bangla and English Alphabets</div>
+        <div class="pub-venue">Journal of Imaging · Apr 2025</div>
+        <div class="pub-supervisor">Bilingual real-time sign language recognition · Supervisors: Dr. Fahmid Al Farid, Shakila Rahman, Hezerul Abdul Karim</div>
+      </div>
+      <span class="pub-badge published"><a href="https://www.mdpi.com/2313-433X/11/5/134" target="_blank">Read →</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities">
+  <div class="section-header">
+    <div class="section-tag">07 — Activities</div>
+    <h2>Life <em>Beyond Code</em></h2>
+  </div>
+  <div class="gallery-masonry" id="activities-gallery">
+    <div class="gallery-item"><img src="Activities/1756391762123.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/Image.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/Screenshot 2025-07-20 163624.png" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2025-08-28 at 11.50.23 PM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2025-08-28 at 11.50.24 PM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2025-08-29 at 9.19.37 PM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2025-08-29 at 9.19.37 PM (2).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2025-08-29 at 9.19.37 PM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-05-19 at 8.44.07 PM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-05-19 at 8.44.07 PM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.04 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.06 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.06 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.07 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.07 AM (2).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.07 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.08 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.08 AM (2).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.08 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.09 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.09 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.11 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.11 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.12 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.12 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.13 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.13 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.14 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.14 AM (2).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.14 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.15 AM (1).jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.15 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/WhatsApp Image 2026-06-08 at 1.20.16 AM.jpeg" alt="Activity" loading="lazy"></div>
+    <div class="gallery-item"><img src="Activities/arduino.jpeg" alt="Arduino Project" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- ARTWORKS -->
+<section id="artworks">
+  <div class="section-header">
+    <div class="section-tag">08 — Artworks</div>
+    <h2>My <em>Drawings</em></h2>
+  </div>
+  <div class="artworks-grid" id="artworks-gallery">
+    <div class="artwork-card"><img src="Artworks/senku1 edit.jpg" alt="Senku Drawing" loading="lazy"></div>
+    <div class="artwork-card"><img src="Artworks/ace&luffy.jpg" alt="Ace & Luffy Drawing" loading="lazy"></div>
+    <div class="artwork-card"><img src="Artworks/zoro.jpeg" alt="Zoro Drawing" loading="lazy"></div>
+    <div class="artwork-card"><img src="Artworks/omai.jpg" alt="Drawing" loading="lazy"></div>
+    <div class="artwork-card"><img src="Artworks/106.jpg" alt="Artwork 106" loading="lazy"></div>
+    <div class="artwork-card"><img src="Artworks/72.jpg" alt="Artwork 72" loading="lazy"></div>
+    <div class="artwork-card"><img src="Artworks/86.jpg" alt="Artwork 86" loading="lazy"></div>
+    <div class="artwork-card"><img src="Artworks/WhatsApp Image 2026-06-08 at 1.20.09 AM (2).jpeg" alt="Artwork" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="section-header">
+    <div class="section-tag">09 — Certificates</div>
+    <h2>Credentials &amp; <em>Proof</em></h2>
+  </div>
+  <div class="certificates-grid" id="certificates-gallery">
+    <div class="cert-card">
+      <img src="Certificates/ICITEE.png" alt="ICITEE 2025 Certificate" loading="lazy">
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        ICITEE 2025 — IEEE Thailand Section
+      </div>
+    </div>
+    <div class="cert-card">
+      <img src="Certificates/Qpain.png" alt="QPAIN Certificate" loading="lazy">
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        QPAIN 2026 Conference
+      </div>
+    </div>
+    <div class="cert-card">
+      <img src="Certificates/certificate.png" alt="IEOM Certificate" loading="lazy">
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        IEOM Society International
+      </div>
+    </div>
+    <div class="cert-card">
+      <img src="Certificates/WhatsApp Image 2025-08-29 at 9.19.36 PM.jpeg" alt="Certificate" loading="lazy">
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Dhaka Medical College Research Club
+      </div>
+    </div>
+    <div class="cert-card">
+      <img src="Certificates/deans award1.jpeg" alt="Dean's Award" loading="lazy">
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Dean's List — Semester 1
+      </div>
+    </div>
+    <div class="cert-card">
+      <img src="Certificates/deans award2.jpeg" alt="Dean's Award 2" loading="lazy">
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Dean's List — Semester 2
+      </div>
+    </div>
+    <div class="cert-card" onclick="window.open('Certificates/certificate-ai-powered-communication.pdf','_blank')">
+      <div style="width:100%;height:220px;background:var(--sage-mist);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.8rem;border-bottom:1px solid var(--border)">
+        <svg width="48" height="48" fill="none" stroke="var(--sage)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span style="font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--sage-dark);letter-spacing:0.06em">PDF DOCUMENT</span>
+      </div>
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        AI-Powered Communication — LinkedIn
+      </div>
+    </div>
+    <div class="cert-card" onclick="window.open('Certificates/certificate-artificial-intelligence-and-machine-learning-fundamentals.pdf','_blank')">
+      <div style="width:100%;height:220px;background:var(--sage-mist);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.8rem;border-bottom:1px solid var(--border)">
+        <svg width="48" height="48" fill="none" stroke="var(--sage)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span style="font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--sage-dark);letter-spacing:0.06em">PDF DOCUMENT</span>
+      </div>
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        AI & ML Fundamentals — LinkedIn
+      </div>
+    </div>
+    <div class="cert-card" onclick="window.open('Certificates/certificate-network-smarter-with-ai.pdf','_blank')">
+      <div style="width:100%;height:220px;background:var(--sage-mist);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.8rem;border-bottom:1px solid var(--border)">
+        <svg width="48" height="48" fill="none" stroke="var(--sage)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span style="font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--sage-dark);letter-spacing:0.06em">PDF DOCUMENT</span>
+      </div>
+      <div class="cert-card-label">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Network Smarter with AI — LinkedIn
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-header">
+    <div class="section-tag">10 — Recognition</div>
+    <h2>Awards &amp; <em>Certifications</em></h2>
+  </div>
+  <div class="achievements-grid">
+    <div class="ach-card">
+      <div class="ach-icon">🏅</div>
+      <div class="ach-body">
+        <h4>Dean's List Honors</h4>
+        <p>Awarded in two academic semesters of undergraduate studies at AIUB</p>
+      </div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">📜</div>
+      <div class="ach-body">
+        <h4>Certificate of Presentation</h4>
+        <p>Dhaka Medical College Research and Academic Club · Aug 2025</p>
+      </div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">📜</div>
+      <div class="ach-body">
+        <h4>Certificate of Presentation</h4>
+        <p>IEEE Thailand Section · Oct 2025</p>
+      </div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">🎓</div>
+      <div class="ach-body">
+        <h4>Complete C# Course — Beginner to Expert</h4>
+        <p>Udemy · May 2024</p>
+      </div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">🌐</div>
+      <div class="ach-body">
+        <h4>Letter of Merit in IT Essentials</h4>
+        <p>Cisco Networking Academy · May 2023</p>
+      </div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">🎨</div>
+      <div class="ach-body">
+        <h4>2nd Place — Virtual Art Venture</h4>
+        <p>Notre Dame Art Club · Nov 2020</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ASCII ART -->
+<section class="ascii-section" id="ascii-art">
+  <div class="section-header" style="text-align:center">
+    <div class="section-tag" style="justify-content:center">Terminal</div>
+  </div>
+  <div class="ascii-art-container">
+    <pre class="ascii-art">
+                                                                                                    
+                                       .+++=-   .-                                                  
+                                      .##+:..:-:--=:..---:                                          
+                                      :*#+.  .. :===: --++**+                                       
+                                  . ..-+%*=-.+%%*===-:=+*#+-+.                                      
+                                  .  .--+**====#*=*##%#**##*+:+:                                    
+                   .  ..           . .:=+#%##=*#%%##%%%%%%%%###-..:                                 
+                  :*#+.      ......:--=*#*#%%#%%%%%%%%%%%%%%%%%%%%%%#%*                             
+                .-*##+=-.    -:..-*##**###*#%%%%%%%@@@@@%%%%%%@@%%%%%%%#-                           
+               ...#%####*::=##%%##*#+*###%#%%%%%%%%@@@%@@@@%@@@@@%%%%%%%+                           
+                 .*%%%%%%%%%%%%###%%%%#*#%%%%%%%%%@@@@@@@@@@@@@@%%%%%%%%%##+:                       
+                :.:+%%%@@%*#%%%%%%%%%%%%%%%%%%%@%%%@@@%@@@@@@@@@@%%%@@@@@%%%%#+-:                   
+                .+--+@@@@@@@@@@%%%%%%%%%@%%%@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@%@%@%+.:                  
+               .:-#*%@@@@@@@@@@@@%%%@@%%@@@@@@@@@@@%@%@@@@@@@@@@@@@@@@@@@%@@%%%%#-                  
+            .=+#%%%%%%%@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@%%%%@%%%#*                 
+            .+-*%%@@@@@@@@@@@@@@@@@@@@@@@@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%= .*%*                
+             *=*%@@@@@@@@@@@@@@@@@%%%@%%%%%%###########%%%%@@@@@@@@@@@@@@@%%%%+   -%+               
+              --+%%@@@@@@@@@@@@@@%%%#******+*+++++++++++***##%%@@@@@@@@@@%@@%@%-   ::               
+               :+%@@@@@@@@@@@@%##**++++===+=============+++++**#%%@@@@@@@%@%@@@#                    
+               +%%%@@@@@@@@@%#*++++================--=====+++++++*%%@@@%%@%%%%%%+                   
+              :*%%%%%@@@@@%#*++=========---------==--==========+++*#%%%%%%%@@%%%#=.                 
+               .#%%%@%@@@%*++++==------------------------==========+#%%%%%%%@@%%%+                  
+               -#@@@@@@%#++++==-------::::::::::::::::-:----======++*#%%%%@@%%%%#=                  
+               =*#%%@%%#++++==----::::::::::::-==++********++=-=====+*#%%%%@@@%%%*                  
+                :+%@%%%+==***###***+--::::::--=+**#####%%%%%##*=====++#%%%@@@%%%%-                  
+                -#%%%@#++#%%%##***++=-:::::::-=+++=+++==---==+##*====**#%%%@@%%%#                   
+                  +*%%*+##+--=++====--::--:::--====+++==---:--=+**===+*##%%@%%%%#:                  
+                  .#%%+*+--:--=+++===----:-:--=++****++====------=+===+##%%%%%%%+                   
+                  :*%%+=-:-=====++**+++=----=+******+==----=++==-======+#%%%%%%%=                   
+                   =%%+--=+=---=++*****+---=++******++-:::--==++==--===+#%%%%%%#:                   
+                   =%%=-==-----=+******+-::===+++*####%%%%##**+===--====#%%%%%%*                    
+                    #%--===*#*#+#%*##++=-::--==++***+*%%%%*##*+==---=-==#%%%%%%-                    
+                    +#--=*##+=%%%##*+*+--:-----=+=+*#********+--:----===+%%%%%=                     
+                    .=--==++***#*++====-----=---::-====+===--::::::---==+%%%%**+                    
+                     :-----======---==-:..::-=--::...:::::.:::::::----===#%*++*+                    
+                     :-:::::::::::---:......:-=-::..........:::::-----===*#+--+-                    
+                     ---::::::::::---:::::----:::--:.....::::::-----=====*%#+=+:                    
+                    .----:::::::-:-=++====*#%%%*--=-:::.::.:::----======+#*+=-=-                    
+                    .-----::::---+#%%%#*****%%#*=+=::::::::::----=====+++#*=+-=                     
+                    .-----------=+**+++***+*+====::::::::::::----====+++*##++=-                     
+                     -=----------=+**#*+**#***=--:--::::-------======+=+*#++=-                      
+                     :----=====**#####**++*+*#**#******=====----=======+##+==.                      
+                     :=--=+*##%###***+++++******###%%%%##*+============+*+-:                        
+                     .===+*%%%%####*******##*#####%%%%%%##*+===========+*=                          
+                     .===+#%%%%%#*+=---------=++**###%%%##*========+===+#-                          
+                      ====+###*+=====+++++++=------=++****+===========+*+                           
+                      -+=+++*+====+*********+===-----==+++++========+++*+                           
+                       +++++++===+=++*****++==-----===+++++++==+=++=+++*:                           
+                       =+++++++++===------:::--=====++++++++++++++++++*=                            
+                        ++++++**+++++++=++=====+++===++++++++++++++***=                             
+                        .+++++******######***##***+===++++++++++*****=                              
+                         .+*+**####%%%%#%%%%%%#%##*+*+*****#**#***#*:                               
+                          :+*###%%%%%%%%%%%%%%%%%%%###############*.                                
+                           .+*#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##**+                                 
+                             =#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##*++=:                                 
+                             :*#%%%%%%%%%%%%%%%%%%%%%%%%%###*++===                                  
+                             :==+**##%%%%%%%%%%%%%%%%##***++=====-                                  
+                           :%======+++**#%%##########*+++=========                                  
+                         .:#==========++++++++*++++++++=====-=====                                  
+                      .::::*=====--=====+++++++++++++=======---===--                                
+              .-=:.:----::.:+====-------==+++=++++=++===------======*.                              
+    .-=+++++===+==--=--=::.:-*==---------==============--------=====*:...                           
+ :--=+**++======----=-:--::.::-+++=====-----======-----=------==-====..:--:...                      
+====-++=-:::---:.......  ::::::::-+**++====-======------=-----====+=..:.-:--=+=:                    
+====-----::::::......... ..:::::::::::-=+**+++==================+-..:.::::---=++=:                  
+====------:::::::........   .:-:::::::-:::::::===+***+++++=--:::::.:::..  ..:-==+-:---:.            
+=====------::-####%#=.....-#%+#%%#--:::::::::::::::::::::::::::::::::.   ......:::::-==-==-         
+%**%@@@@@@@@@%@@@@%@@@%%%@%%@%%%%##%%%*=--:::::::::::::::::::::::-*:. .  .......::::::=-==++++-:    
+@@@@@@@@@@@@@@@@@@@@@@%%@@@@@%%%%%%%%#*#*%%%%#*+=---::::--=+*#%%#*#%%%%%%#+=:...:::::::---=++++++++=
+@@@@@@@@@@@@@@@@%%@@@%@%%@%%%%%%%%%%%%%%%%%%%##*=+##%#%%#*+##%%%%%%%%@%%%%%%%%%#*::::=%%-----====+**
+@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%#=..-*#########%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@%%@@@@%=---======+
+@@@@@@@@%%%%%%%#+-::-==-:::.........   . .            .=++++*#%%%%%%%%%%%%%%%%%%@%@@@@@@@%=--====+++
+**+=======------:::::::::.............        .                ..:::::=*%%%%%%%%%%@@@@@@@@%*=====++#
+++++======-------:::::::::::............. ..    .       . ...............::::::=*#%%@@@@@%#%@@@@@@@@
+++++=======------:-:::::::::................. .. ......................::::::::::--*%%%#=====@@@@@@@
++++++========-------::::::::::........................................::::::::::--------=====+@@@@@@
+++++++=======--------:::::::::::.:..................................:.::::::::--------========#@@@@@
+++++++=========----------::::::-:::::::::::.....................:.:::::::::::--------=========++++#%
+***+++++++===========--------------::::::::::::::::::::::::::..::::::::::::----------=======++++++++
+*****+++++++=+========---------------:-::::::::::::::::::-::------------------============++=++++++*
+******+++++++++=========----------------:--:::-:::::::----:----------------==============++*++++++**
+******+++++++++===========-=------------------------:--------------------===========+++++***+*******
+*****+++++++=++++===========------------------------------------------============++++++************
+*****+**++++++++++++==========---------------------------------------============+++++++*******##*%#
+#********+*+++++++++=====---------------:-:::----------------------============++++++++++**#***##*%%
+*****#***+##++++==========--------------------:--::------------=-============++++++++++++***#***%##%
+    </pre>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <div class="section-tag">11 — Contact</div>
+    <h2>Let's <em>Connect</em></h2>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <img src="Profile Picture/img3.png" alt="Navin" class="contact-photo">
+      <p class="contact-desc">Whether you have a research collaboration, internship opportunity, or just want to talk tech — I'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:navinmdnawshin@gmail.com" class="contact-link-item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          navinmdnawshin@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/md-nawshin-navin" target="_blank" class="contact-link-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          linkedin.com/in/md-nawshin-navin
+        </a>
+        <a href="https://github.com/navinxqz" target="_blank" class="contact-link-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          github.com/navinxqz
+        </a>
+        <a href="tel:+8801975025141" class="contact-link-item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +880 1975 025141
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label>Name</label>
+            <input type="text" id="cf-name" placeholder="Your name">
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" id="cf-email" placeholder="your@email.com">
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Subject</label>
+          <input type="text" id="cf-subject" placeholder="What's this about?">
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea id="cf-message" placeholder="Your message..."></textarea>
+        </div>
+        <button class="btn-send" id="cf-send">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Send Message
+        </button>
+        <div class="form-success" id="form-success">Message sent! I'll get back to you soon.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Md. Nawshin Navin · All rights reserved</p>
+  <p>Built with gugu gaga 🫠· Dhaka, Bangladesh</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">&times;</button>
+  <img src="" alt="Preview" id="lightbox-img">
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
