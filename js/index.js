@@ -1,4 +1,51 @@
-﻿// NAV SCROLL
+// THEME TOGGLE
+const themeToggles = document.querySelectorAll('.theme-toggle');
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.documentElement.setAttribute('data-theme', 'dark');
+}
+
+themeToggles.forEach(themeToggle => {
+  const sunIcon = themeToggle.querySelector('.sun-icon');
+  const moonIcon = themeToggle.querySelector('.moon-icon');
+
+  if (savedTheme === 'dark') {
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
+  } else {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const isDark = currentTheme === 'dark';
+    
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+
+    // Update all toggles
+    themeToggles.forEach(toggle => {
+      const sIcon = toggle.querySelector('.sun-icon');
+      const mIcon = toggle.querySelector('.moon-icon');
+      if (isDark) {
+        sIcon.style.display = 'none';
+        mIcon.style.display = 'block';
+      } else {
+        sIcon.style.display = 'block';
+        mIcon.style.display = 'none';
+      }
+    });
+  });
+});
+
+// NAV SCROLL
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
@@ -10,11 +57,13 @@ const mobileNav = document.getElementById('mobile-nav');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   mobileNav.classList.toggle('open');
+  navbar.classList.toggle('menu-open');
 });
 document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('open');
     mobileNav.classList.remove('open');
+    navbar.classList.remove('menu-open');
   });
 });
 
@@ -27,7 +76,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.08 });
 
-document.querySelectorAll('.fade-in, .timeline-item, .edu-card, .project-card, .skill-category, .pub-item, .ach-card, .gallery-item, .artwork-card, .cert-card').forEach(el => {
+document.querySelectorAll('.fade-in, .timeline-item, .edu-card, .project-card, .skill-category, .pub-item, .ach-card, .gallery-item, .artwork-card, .cert-card, .volunteering-card, .offer-item').forEach(el => {
   observer.observe(el);
 });
 
@@ -52,6 +101,9 @@ document.querySelectorAll('.artwork-card').forEach((item, i) => {
 });
 document.querySelectorAll('.cert-card').forEach((item, i) => {
   item.style.transitionDelay = `${i * 0.06}s`;
+});
+document.querySelectorAll('.volunteering-card').forEach((card, i) => {
+  card.style.transitionDelay = `${i * 0.08}s`;
 });
 
 // HERO AND PAGE INTERACTION
@@ -176,7 +228,7 @@ document.querySelectorAll('.gallery-item, .artwork-card').forEach(item => {
     if (img) openLightbox(img.src);
   });
 });
-document.querySelectorAll('.cert-card').forEach(card => {
+document.querySelectorAll('.cert-card, .volunteering-card').forEach(card => {
   const img = card.querySelector('img');
   if (img) {
     card.addEventListener('click', (e) => {
@@ -212,13 +264,143 @@ document.getElementById('cf-send').addEventListener('click', () => {
 
 // Active nav link highlight
 const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
+const navLinks = document.querySelectorAll('.nav-links a, .mobile-link');
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(sec => {
     if (window.scrollY >= sec.offsetTop - 100) current = sec.getAttribute('id');
   });
   navLinks.forEach(link => {
-    link.style.color = link.getAttribute('href') === `#${current}` ? 'var(--sage)' : '';
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
   });
 });
+
+// Typing effect for Hero Role
+const typingText = document.querySelector('.typing-text');
+if (typingText) {
+  const words = ["Data Analyst", "Researcher", "Digital Artist", "Web Developer", "CSE Undergrad", "Dreamer"];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+      typingText.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typingText.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    let typeSpeed = isDeleting ? 40 : 80;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+      typeSpeed = 2000; // Pause at end of word
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      typeSpeed = 500; // Pause before typing next word
+    }
+
+    setTimeout(typeEffect, typeSpeed);
+  }
+  
+  setTimeout(typeEffect, 500); // Initial delay
+}
+
+// PROJECT FILTERING
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+if (filterBtns.length > 0) {
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const filterValue = btn.getAttribute('data-filter').toLowerCase();
+      let visibleCount = 0;
+      
+      projectCards.forEach(card => {
+        const projectNameEl = card.querySelector('.project-name');
+        if (projectNameEl && projectNameEl.textContent.includes('GitHub')) {
+          card.classList.remove('hidden-card');
+          setTimeout(() => card.classList.add('visible'), 50);
+          return;
+        }
+        
+        const techTags = Array.from(card.querySelectorAll('.tech-tag')).map(tag => tag.textContent.toLowerCase());
+        
+        if (filterValue === 'all' || techTags.includes(filterValue)) {
+          card.classList.remove('hidden-card');
+          card.style.transitionDelay = `${visibleCount * 0.07}s`;
+          visibleCount++;
+          setTimeout(() => card.classList.add('visible'), 50);
+        } else {
+          card.classList.remove('visible');
+          setTimeout(() => {
+            if(!card.classList.contains('visible')) {
+              card.classList.add('hidden-card');
+            }
+          }, 500);
+        }
+      });
+    });
+  });
+}
+
+// OFFERS ACCORDION
+document.querySelectorAll('.offer-header').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isActive = item.classList.contains('active');
+    document.querySelectorAll('.offer-item').forEach(other => {
+      other.classList.remove('active');
+    });
+    if (!isActive) {
+      item.classList.add('active');
+    }
+  });
+});
+
+// SKILLS FILTERING
+const skillFilterBtns = document.querySelectorAll('.skills-filter-btn');
+const skillCategories = document.querySelectorAll('.skill-category');
+
+if (skillFilterBtns.length > 0) {
+  skillFilterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      skillFilterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const filterValue = btn.getAttribute('data-skill-filter');
+      let delay = 0;
+      
+      skillCategories.forEach(cat => {
+        const group = cat.getAttribute('data-skill-group');
+        
+        if (filterValue === 'all' || group === filterValue) {
+          cat.classList.remove('hidden-skill');
+          cat.style.transitionDelay = `${delay * 0.08}s`;
+          delay++;
+          // Re-trigger visible animation
+          cat.classList.remove('visible');
+          setTimeout(() => cat.classList.add('visible'), 50);
+        } else {
+          cat.classList.remove('visible');
+          setTimeout(() => {
+            if (!cat.classList.contains('visible')) {
+              cat.classList.add('hidden-skill');
+            }
+          }, 400);
+        }
+      });
+    });
+  });
+}
