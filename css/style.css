@@ -42,6 +42,34 @@
   --warm-dark: #0a080d;
 }
 
+[data-theme="dark"] .nav-links a {
+  color: rgba(255, 255, 255, 0.86);
+}
+[data-theme="dark"] .nav-links a:hover,
+[data-theme="dark"] .nav-links a.active {
+  color: #FFFFFF;
+}
+[data-theme="dark"] .nav-links a.active {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+[data-theme="dark"] .hamburger span {
+  background: #FFFFFF;
+}
+[data-theme="dark"] .mobile-nav.open a {
+  color: rgba(255, 255, 255, 0.86);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+[data-theme="dark"] .mobile-nav.open a:hover {
+  color: #FFFFFF;
+}
+[data-theme="dark"] .hero-role,
+[data-theme="dark"] .typing-text,
+[data-theme="dark"] .typing-cursor {
+  color: #000000;
+}
+
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -728,6 +756,12 @@ h2 em { font-style: italic; color: var(--sage); }
 #offers {
   background: var(--off-white);
 }
+#offers .glass-card {
+  background: linear-gradient(135deg, var(--sage-pale) 0%, var(--off-white) 100%);
+  border: 1px solid var(--border);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 .offers-accordion {
   display: flex;
   flex-direction: column;
@@ -770,7 +804,7 @@ h2 em { font-style: italic; color: var(--sage); }
 .offer-header {
   width: 100%;
   text-align: left;
-  background: none;
+  background: linear-gradient(90deg, rgba(106,90,160,0.12) 0%, rgba(255,255,255,0.45) 100%);
   border: none;
   padding: 1.5rem 1.8rem;
   display: flex;
@@ -796,25 +830,25 @@ h2 em { font-style: italic; color: var(--sage); }
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--beige);
-  border: 1px solid var(--beige-dark);
+  background: linear-gradient(135deg, var(--sage-light) 0%, var(--sage) 100%);
+  border: 1px solid rgba(75,60,128,0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'DM Mono', monospace;
   font-size: 1.1rem;
-  color: var(--sage);
+  color: var(--white);
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
 .offer-item:hover .offer-icon {
-  background: var(--sage-light);
+  background: linear-gradient(135deg, var(--sage) 0%, var(--sage-dark) 100%);
   color: var(--white);
   border-color: var(--sage);
 }
 .offer-item.active .offer-icon {
   transform: rotate(45deg);
-  background: var(--sage);
+  background: linear-gradient(135deg, var(--sage-dark) 0%, var(--sage) 100%);
   color: var(--white);
   border-color: var(--sage);
 }
@@ -1508,6 +1542,7 @@ h2 em { font-style: italic; color: var(--sage); }
 #contact .section-tag::before { background: var(--sage-light); }
 #contact h2 { color: var(--beige-light); }
 #contact h2 em { color: var(--sage-light); }
+[data-theme="dark"] #contact .lets-word { color: #FFFFFF; }
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
